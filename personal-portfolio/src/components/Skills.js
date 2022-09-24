@@ -10,6 +10,7 @@ import typescript from "../assets/img/typescript.png";
 import nextjs from "../assets/img/nextjs.png";
 import css from "../assets/img/css.png";
 import html from "../assets/img/html.png";
+import github from "../assets/img/github.png";
 
 import colorSharp from "../assets/img/color-sharp.png";
 
@@ -68,6 +69,11 @@ function Skills() {
 									<img src={firebase} alt="skillImage" />
 									<h3>Firebase SDK</h3>
 									<h5>Skilled</h5>
+								</div>
+								<div className="item">
+									<img src={github} alt="skillImage" />
+									<h3>Git Version Control</h3>
+									<h5>Beginner</h5>
 								</div>
 								<div className="item">
 									<img src={redux} alt="skillImage" />

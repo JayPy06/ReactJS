@@ -9,9 +9,10 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 // import logo from "../assets/img/logo.svg";
 import logo from "../assets/img/BMine.png";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+import linkedin from "../assets/img/nav-icon1.svg";
+import facebook from "../assets/img/nav-icon2.svg";
+import instagram from "../assets/img/nav-icon3.svg";
+import github from "../assets/img/githubNav.png";
 
 function NavBar() {
 	const [activeLink, setActiveLink] = useState("home");
@@ -78,17 +79,28 @@ function NavBar() {
 							</Nav.Link>
 						</Nav>
 						<span className="navbar-text">
-							{/* <div className="social-icon">
-								<a>
-									<img src={navIcon1} alt="" />
+							<div className="social-icon">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://www.linkedin.com/in/krystian-kruszelnicki-bmine/"
+								>
+									<img src={linkedin} alt="linkedin" />
+								</a>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://github.com/Croosheck"
+								>
+									<img src={github} alt="github" />
+								</a>
+								{/* <a>
+									<img src={navIcon2} alt="facebook" />
 								</a>
 								<a>
-									<img src={navIcon2} alt="" />
-								</a>
-								<a>
-									<img src={navIcon3} alt="" />
-								</a>
-							</div> */}
+									<img src={navIcon3} alt="instagram" />
+								</a> */}
+							</div>
 							<HashLink to="#connect">
 								<button className="vvd">
 									<span>Let's Connect</span>

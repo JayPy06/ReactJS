@@ -47,30 +47,37 @@ function Projects() {
 			description: "Coords based app",
 			imgUrl: jsp1,
 			demoUrl: "https://mycountries-flags.netlify.app/",
+			gitUrl:
+				"https://github.com/Croosheck/JavaScript/tree/master/Countries-Promises",
 		},
 		{
 			title: "Pig Game",
 			description: "2-6: adds up; 1: player switch. Limit: 100.",
 			imgUrl: jsp2,
 			demoUrl: "https://mypig-game-app.netlify.app/",
+			gitUrl: "https://github.com/Croosheck/JavaScript/tree/master/Pig-Game",
 		},
 		{
 			title: "Bankist Website",
 			description: "Promoting Page",
 			imgUrl: jsp3,
 			demoUrl: "https://mybankist-site.netlify.app/",
+			gitUrl:
+				"https://github.com/Croosheck/JavaScript/tree/master/Bankist-site",
 		},
 		{
 			title: "Bankist Account App",
 			description: "Ac1: js/1111; Ac2: jd/2222, Ac3: stw/3333",
 			imgUrl: jsp4,
 			demoUrl: "https://mybankist-app.netlify.app/",
+			gitUrl: "https://github.com/Croosheck/JavaScript/tree/master/Bankist-app",
 		},
 		{
-			title: "Mapty Website",
+			title: "Mapty App",
 			description: "Cycling & running locations",
 			imgUrl: jsp5,
 			demoUrl: "https://mymapty-site.netlify.app/",
+			gitUrl: "https://github.com/Croosheck/JavaScript/tree/master/Mapty-app",
 		},
 	];
 
@@ -80,12 +87,15 @@ function Projects() {
 			description: "Travel Website",
 			imgUrl: rjsp1,
 			demoUrl: "https://croose.netlify.app/",
+			gitUrl:
+				"https://github.com/Croosheck/ReactJS/tree/master/react-travel-website",
 		},
 		{
 			title: "Deliciouss App",
 			description: "Recipe Finder",
 			imgUrl: rjsp2,
 			demoUrl: "https://deliciouss-app.netlify.app/",
+			gitUrl: "https://github.com/Croosheck/ReactJS/tree/master/deliciouss-app",
 		},
 
 		{
@@ -93,12 +103,15 @@ function Projects() {
 			description: "Authentication with help of Firebase",
 			imgUrl: rjsp3,
 			demoUrl: "https://authentication-react-website.netlify.app/",
+			gitUrl:
+				"https://github.com/Croosheck/ReactJS/tree/master/07-authentication",
 		},
 		{
 			title: "Delivery Website",
 			description: "Ordering system with Firebase Real-time Database",
 			imgUrl: rjsp4,
 			demoUrl: "https://mydelivery-site.netlify.app/",
+			gitUrl: "https://github.com/Croosheck/ReactJS/tree/master/Food-delivery",
 		},
 	];
 
@@ -108,18 +121,23 @@ function Projects() {
 			description: "As the name says ;-)",
 			imgUrl: rnp1,
 			video: rnp1Vid,
+			gitUrl:
+				"https://github.com/Croosheck/React-Native/tree/master/Guess-My-Number",
 		},
 		{
 			title: "Meals App",
 			description: "Favorite recipe finder",
 			imgUrl: rnp2,
 			video: rnp2Vid,
+			gitUrl: "https://github.com/Croosheck/React-Native/tree/master/Meals-App",
 		},
 		{
 			title: "Expenses App",
 			description: "Expenses manager",
 			imgUrl: rnp3,
 			video: rnp3Vid,
+			gitUrl:
+				"https://github.com/Croosheck/React-Native/tree/master/Expenses-App",
 		},
 		{
 			title: "Favorite Places",
@@ -127,6 +145,8 @@ function Projects() {
 				"Firebase SDK backend based app (Authentication, Firestore & Storage) with Google Maps API and Redux Toolkit",
 			imgUrl: rnp4,
 			video: rnp4Vid,
+			gitUrl:
+				"https://github.com/Croosheck/React-Native/tree/master/Favorite-Places",
 		},
 	];
 
@@ -225,6 +245,7 @@ function Projects() {
 																onDemoClick={() =>
 																	openInNewTab(project.demoUrl)
 																}
+																onGitClick={() => openInNewTab(project.gitUrl)}
 															/>
 														);
 													})}
@@ -240,6 +261,7 @@ function Projects() {
 																onDemoClick={() =>
 																	openInNewTab(project.demoUrl)
 																}
+																onGitClick={() => openInNewTab(project.gitUrl)}
 															/>
 														);
 													})}
@@ -254,6 +276,7 @@ function Projects() {
 																{...project}
 																md={3}
 																onDemoClick={() => onDemoClickHandler(project)}
+																onGitClick={() => openInNewTab(project.gitUrl)}
 															/>
 														);
 													})}
